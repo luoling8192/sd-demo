@@ -1,0 +1,17 @@
+version: "0.2"
+language: en
+words:
+  - diffusers
+  - fastapi
+  - pydantic
+  - runwayml
+  - torchvision
+  - uvicorn
+  - xformers
+ignorePaths:
+  - .git
+  - .venv
+  - __pycache__
+  - "*.pyc"
+  - requirements.txt
+  - pyproject.toml

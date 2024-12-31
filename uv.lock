@@ -109,7 +109,7 @@ wheels = [
 
 [[package]]
 name = "diffusers"
-version = "0.25.0"
+version = "0.32.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -121,9 +121,9 @@ dependencies = [
     { name = "requests" },
     { name = "safetensors" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/e5/ea24f86c151b9b95a91c8c3e4fc8ce26f68371257b123d2af1b3b747ca0d/diffusers-0.25.0.tar.gz", hash = "sha256:67102c6490f869aea943f90cd7a115251c8989c1ab3e9b07eaad4e5a4c593f59", size = 1411293 }
+sdist = { url = "https://files.pythonhosted.org/packages/bb/b3/c43ace020b7475df034eb1ef4c544f51ee40b71ea87f87f9992821b06a95/diffusers-0.32.1.tar.gz", hash = "sha256:d48c19a4bce612d225f857e2e5d4f6ee003b88234af46b44c20119ee23f1568c", size = 2612689 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/aa/0b/af1dd4b355accf28fa413d93c3b7df2c25922ebc3435eecc56818a3f8c1e/diffusers-0.25.0-py3-none-any.whl", hash = "sha256:5eebec0c4d4f12de205e6e97d34c3617598be9a1f853cc5f40becc94a1abaa7c", size = 1834980 },
+    { url = "https://files.pythonhosted.org/packages/44/67/f9a02086faf52372ad36224c6d95616a867399e171e6919a5c326b75cd10/diffusers-0.32.1-py3-none-any.whl", hash = "sha256:ab2ed6efe9dd2364db55b94fae453ff149dc06693ec99702cadfbeeaaa00c9c1", size = 3224149 },
 ]
 
 [[package]]
@@ -649,6 +649,7 @@ dependencies = [
     { name = "accelerate" },
     { name = "diffusers" },
     { name = "fastapi" },
+    { name = "huggingface-hub" },
     { name = "pydantic" },
     { name = "torch" },
     { name = "torchvision" },
@@ -659,8 +660,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = "==0.26.1" },
-    { name = "diffusers", specifier = "==0.25.0" },
+    { name = "diffusers", specifier = ">=0.26.0" },
     { name = "fastapi", specifier = "==0.109.0" },
+    { name = "huggingface-hub", specifier = ">=0.20.0" },
     { name = "pydantic", specifier = "==2.5.3" },
     { name = "torch", specifier = "==2.5.1" },
     { name = "torchvision", specifier = ">=0.20.1" },
